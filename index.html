@@ -7,9 +7,91 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Roboto", sans-serif
+}
+
+body {
+  background-color: #424242;
+}
+
+hr {
+  color: #424949;
+}
+
+h2 {
+  color: #66bb6a;
+}
+
+h5 {
+  color: #ffd740;
+  background-color: #616161;
+}
+
+.name {
+  background-color: #616161;
+  color: #D5DBDB;
+}
+
+.current-box {
+  background-color: #4527a0;
+  color: #D5DBDB;
+}
+
+.section p {
+  color: #D5DBDB;
+}
+
+.sidebar {
+  background-color: #757575;
+  color: #D5DBDB;
+}
+
+.date {
+  color: #4527a0;
+}
+
+.info {
+  color: #4527a0;
+}
+
+.section {
+  background-color: #757575;
+}
+
+.section .fa,h2 {
+  color: #66bb6a;
+}
+
+.date .fa {
+  color: #4527a0;
+}
+
+.skills-container h6 {
+  color: #f4511e;
+  background-color: #757575;
+  padding: 5px;
+  margin-left: 0px;
+  float: left;
+}
+
+.skill-title {
+  color: #f4511e;
+  background-color: #616161;
+  padding: 5px;
+  margin-left: 0px;
+  float: left;
+}
+
+.skill-level {
+  background-color: #43a047;
+  height: 15px;
+}
+
 </style>
-<body class="w3-light-grey">
+
+<body>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -20,137 +102,221 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Left Column -->
     <div class="w3-third">
 
-      <div class="w3-white w3-text-grey w3-card-4">
+      <div class="sidebar w3-card-4">
         <div class="w3-display-container">
           <img src="avatar.png" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Dakota Dalton</h2>
+            <h2 class="name w3-padding w3-round">Dakota Dalton</h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Missori, USA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>1silvertiger@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Phone#</p>
+          <p class="info"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large "></i>Software Developer</p>
+          <p class="info"><i class="fa fa-home fa-fw w3-margin-right w3-large "></i>Missouri, USA</p>
+          <p class="info"><i class="fa fa-envelope fa-fw w3-margin-right w3-large "></i>1silvertiger@gmail.com</p>
           <hr>
 
           <!-- Skills panel -->
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Java application develoment</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Full-stack database development</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+          <div class="skills-container">
+            <p class="w3-large"><b><i class="fa fa-desktop fa-fw w3-margin-right "></i>Technical Skills</b></p>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Java application development</p>
+              <span class="w3-rest"></span>
             </div>
-          </div>
-          <p>Web development</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Material design</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <p>Object oriented programming</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <p>MVC design</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <p>Web forms</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Full-stack database development</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:80%">
+                <div class="w3-center w3-text-white"></div>
+              </div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Web development</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:75%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Material design</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Object oriented programming</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">MVC design</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Web forms</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            </div>
+            <br>
 
           <!-- Languages panel -->
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Java</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>SQL</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <p>C#</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <p>ASP.NET</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <p>HTML5</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <p>CSS3</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <p>JavaScript</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <p>Bash</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-code fa-fw w3-margin-right "></i>Languages</b></p>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Java</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:100%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">SQL</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:55%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Python</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">C#</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">ASP.NET</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">HTML5</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">CSS3</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">JavaScript</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Bash</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Assembly</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge skill-level" style="width:25%"></div>
+            </div>
+            <br>
 
           <!-- Frameworks panel -->
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Frameworks</b></p>
-          <p>Bootstrap</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>jQuery</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+            <p class="w3-large"><b><i class="fa fa-fw w3-margin-right "><b>{ }</b></i>Frameworks</b></p>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Bootstrap</p>
+              <span class="w3-rest"></span>
             </div>
-          </div>
-          <p>W3.CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Materialize CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">jQuery</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:80%">
+                <div class="w3-center w3-text-white"></div>
+              </div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">W3.CSS</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:75%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Materialize CSS</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            </div>
+            <br>
 
-          <!-- Platforms panel -->
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Platforms</b></p>
-          <p>MySQL</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Microsoft SQL Server</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+            <!-- Databases panel -->
+            <p class="w3-large"><b><i class="fa fa-database fa-fw w3-margin-right "></i>Databases</b></p>
+            <div class="w3-container">
+              <p class="skill-title w3-round">MySQL</p>
+              <span class="w3-rest"></span>
             </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Microsoft SQL Server</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:80%">
+                <div class="w3-center w3-text-white"></div>
+              </div>
+            </div>
+            <br>
+
+            <!-- Platforms panel -->
+            <p class="w3-large"><b><i class="fa fa-server fa-fw w3-margin-right "></i>IaaS Platforms</b></p>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Google Cloud</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:75%"></div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">Amazon Web Services</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            </div>
+            <br>
           </div>
-          <p>Google Cloud SQL</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Amazon Web Services</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
         </div>
       </div><br>
 
@@ -160,41 +326,41 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird">
 
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+      <div class="section w3-container w3-card-2 w3-margin-bottom">
 
         <!-- Work experience panel -->
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Helpdesk employee / College of the Ozarks Computer Center</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>I am currently employed at the College of the Ozarks Computer Center, the IT helpdesk for the college.  Typical work orders include: troubleshooting PC’s, printers, and other associated devices; diagnosing issues over the phone; explaining technical concepts to laypersons; discussing issues via live chat and phone calls with manufacturers; and updating and troubleshooting a plethora of software from various vendors.</p>
+          <h5 class="w3-padding"><b>Helpdesk employee / College of the Ozarks Computer Center</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag current-box w3-round">Current</span></h6>
+          <p class="section-text w3-padding">I am currently employed at the College of the Ozarks Computer Center, the IT helpdesk for the college.  Typical work orders include: troubleshooting PC’s, printers, and other associated devices; diagnosing issues over the phone; explaining technical concepts to laypersons; discussing issues via live chat and phone calls with manufacturers; and updating and troubleshooting a plethora of software from various vendors.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Mowing crew / College of the Ozarks Landscaping</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Jun 2017</h6>
+          <h5 class="w3-padding"><b>Mowing crew / College of the Ozarks Landscaping</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Jun 2017</h6>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Student Manager / Bobcate Food Services</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2016</h6>
+          <h5 class="w3-padding"><b>Student Manager / Bobcat Food Services</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2016</h6>
           <p>For a single semester, I worked as a student manager at Bobcat Food Services, the department of the College of the Ozarks responsible for feeding the students, faculty, and staff.  As a student manager, I was expected to manage between six and twenty student workers, occasionally assisted by another student manager.  Two full-time managers and small full-time kitchen staff provided supervision.  I acted as an intermediary between upper management and the student workers, assured timely and safe preparation of food, and directed the student workers in maintaining a clean and professional dining environment.  Occasionally, I was expected to assist or direct catered meals, including an annual alumni dinner.  Expectations included conflict management, employee relations, and professional interaction with students, faculty, staff, and members of the public. </p><br>
         </div>
       </div>
 
       <!-- Education panel -->
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+      <div class="section w3-container w3-card-2">
+        <h2 class="w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
         <!--<div class="w3-container">
           <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
           <p>Web Development! All I need to know in one place</p>
           <hr>
         </div-->
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>College of the Ozarks</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h5 class="w3-padding"><b>College of the Ozarks</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag current-box w3-round">Current</span></h6>
           <p>Bachelor's Degree</p>
           <p>I am currently pursuing a BS in computer sciene at the College of the Ozarks.</p>
           <hr>
@@ -203,11 +369,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <br>
 
       <!-- Projects panel -->
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+      <div class=section "w3-container w3-card-2 w3-white">
+        <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge "></i>Projects</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Best Books</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2017</h6>
+          <h5 class="w3-padding"><b>Best Books</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2017</h6>
           <p>Full-stack bookstore application</p>
           <p>For my Database Systems class at College of the Ozarks, taken in Spring of 2017, the final project consisted of an online bookstore.  The professor allowed much freedom of design in pursuit of his requirements.  My partner, Joshua Dowd, and I opted to employ a CLI for simplicity of design, testing, and deployment and used MySQL as the backend.  We used MVC design to streamline separation of functionality as well as enforce user permissions.  Customers could create accounts, log in and out, search and view books, add books to their carts, and place orders.  Admin capabilities, which I primarily focused on, included: CRUD functionality on a variety of information (user addresses, publisher contact information, prices, book information, and more); updating orders between processing, shipping, delivered, cancelled, and returned; managing user permissions; and generating reports in CSV format.  The database included 11 tables in BCNF.  My partner and I designed and deployed the database, populated it with data, wrote 107 stored procedures, wrote the objects for processing the data and accompanying DAO classes for storing it in the database, wrote admin and customer controllers for parsing user input and passing commands to the DAO, wrote a master controller to direct user input to the appropriate specialized controller, wrote a class for elegantly displaying information in the console, and wrote a class for translating information in the database into CSV format for report generation.  Notable functionality includes: hashing of user passwords using the bcrypt algorithm; encrypting user credit cards with AES-256 (due to time constraints, with the professor’s permission, the key to each number was a hash of the CVV number, required for checkout); soft delete of user accounts allowing retrieval of information for data-mining or account reopening; and searching algorithms optimized to execute as few calls on the database as possible.  The full source code of the project is available on my GitHub account.
           </p>
