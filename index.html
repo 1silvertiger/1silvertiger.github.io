@@ -7,7 +7,17 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+/*
+body grey: #424242
+background grey: #757575
+medium grey: #616161
 
+font color grey: #b0b3b3
+
+purple: #4527a0
+green: #66bb6a
+yellow: #ffd740
+*/
 html,body,h1,h2,h3,h4,h5,h6 {
   font-family: "Roboto", sans-serif
 }
@@ -25,8 +35,8 @@ h2 {
 }
 
 h5 {
-  color: #ffd740;
-  background-color: #616161;
+  color: #f4511e;
+  /*background-color: #424242;*/
 }
 
 .name {
@@ -36,10 +46,6 @@ h5 {
 
 .current-box {
   background-color: #4527a0;
-  color: #D5DBDB;
-}
-
-.section p {
   color: #D5DBDB;
 }
 
@@ -60,8 +66,13 @@ h5 {
   background-color: #757575;
 }
 
-.section .fa,h2 {
-  color: #66bb6a;
+.section p {
+  color: #b0b3b3;
+  background-color: #424242;
+}
+
+.section .fa, h2 {
+  color: #ffd740;
 }
 
 .date .fa {
@@ -76,17 +87,25 @@ h5 {
   float: left;
 }
 
+.skill-header {
+  color: #ffd740;
+}
+
 .skill-title {
   color: #f4511e;
-  background-color: #616161;
+  background-color: #424242;
   padding: 5px;
   margin-left: 0px;
   float: left;
 }
 
 .skill-level {
-  background-color: #43a047;
+  background-color: #66bb6a;
   height: 15px;
+}
+
+.skill-level-background {
+  background-color: #424242;
 }
 
 </style>
@@ -117,148 +136,155 @@ h5 {
 
           <!-- Skills panel -->
           <div class="skills-container">
-            <p class="w3-large"><b><i class="fa fa-desktop fa-fw w3-margin-right "></i>Technical Skills</b></p>
+            <p class="w3-large skill-header"><b><i class="fa fa-desktop fa-fw w3-margin-right "></i>Technical Skills</b></p>
             <div class="w3-container">
-              <p class="skill-title w3-round">Java application development</p>
+              <p class="skill-title w3-round">Application development</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%"></div>
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:100%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Full-stack database development</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:80%">
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%">
                 <div class="w3-center w3-text-white"></div>
               </div>
+            </div>
+            <div class="w3-container">
+              <p class="skill-title w3-round">GUI front-end development</p>
+              <span class="w3-rest"></span>
+            </div>
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:85%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Web development</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:75%"></div>
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:85%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Material design</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
             </div>
-            <div class="w3-container">
+            <!--<div class="w3-container">
               <p class="skill-title w3-round">Object oriented programming</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
-            </div>
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:100%"></div>
+            </div>-->
             <div class="w3-container">
               <p class="skill-title w3-round">MVC design</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:70%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Web forms</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
+            <div class="skill-level-background w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:30%"></div>
             </div>
             <br>
 
           <!-- Languages panel -->
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-code fa-fw w3-margin-right "></i>Languages</b></p>
+            <p class="w3-large w3-text-theme skill-header"><b><i class="fa fa-code fa-fw w3-margin-right "></i>Languages</b></p>
             <div class="w3-container">
               <p class="skill-title w3-round">Java</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:100%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">SQL</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:55%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Python</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">C#</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">ASP.NET</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">HTML5</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">CSS3</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">JavaScript</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Bash</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Assembly</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-level-background w3-round-xlarge">
               <div class="w3-round-xlarge skill-level" style="width:25%"></div>
             </div>
             <br>
 
           <!-- Frameworks panel -->
-            <p class="w3-large"><b><i class="fa fa-fw w3-margin-right "><b>{ }</b></i>Frameworks</b></p>
+            <p class="w3-large skill-header"><b><i class="fa fa-fw w3-margin-right "><b>{ }</b></i>Frameworks</b></p>
             <div class="w3-container">
               <p class="skill-title w3-round">Bootstrap</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">jQuery</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:80%">
                 <div class="w3-center w3-text-white"></div>
               </div>
@@ -267,32 +293,32 @@ h5 {
               <p class="skill-title w3-round">W3.CSS</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:75%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Materialize CSS</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
             </div>
             <br>
 
             <!-- Databases panel -->
-            <p class="w3-large"><b><i class="fa fa-database fa-fw w3-margin-right "></i>Databases</b></p>
+            <p class="w3-large skill-header"><b><i class="fa fa-database fa-fw w3-margin-right "></i>Databases</b></p>
             <div class="w3-container">
               <p class="skill-title w3-round">MySQL</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:90%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Microsoft SQL Server</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:80%">
                 <div class="w3-center w3-text-white"></div>
               </div>
@@ -300,19 +326,19 @@ h5 {
             <br>
 
             <!-- Platforms panel -->
-            <p class="w3-large"><b><i class="fa fa-server fa-fw w3-margin-right "></i>IaaS Platforms</b></p>
+            <p class="w3-large skill-header"><b><i class="fa fa-server fa-fw w3-margin-right "></i>IaaS Platforms</b></p>
             <div class="w3-container">
               <p class="skill-title w3-round">Google Cloud</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:75%"></div>
             </div>
             <div class="w3-container">
               <p class="skill-title w3-round">Amazon Web Services</p>
               <span class="w3-rest"></span>
             </div>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="skill-level-background w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge skill-level" style="width:50%"></div>
             </div>
             <br>
@@ -331,21 +357,21 @@ h5 {
         <!-- Work experience panel -->
         <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-padding"><b>Helpdesk employee / College of the Ozarks Computer Center</b></h5>
-          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag current-box w3-round">Current</span></h6>
-          <p class="section-text w3-padding">I am currently employed at the College of the Ozarks Computer Center, the IT helpdesk for the college.  Typical work orders include: troubleshooting PC’s, printers, and other associated devices; diagnosing issues over the phone; explaining technical concepts to laypersons; discussing issues via live chat and phone calls with manufacturers; and updating and troubleshooting a plethora of software from various vendors.</p>
+          <h5><b>Helpdesk employee / College of the Ozarks Computer Center</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - <span class="w3-tag current-box w3-round">Present</span></h6>
+          <p class="section-text w3-padding"><i>I am currently employed at the College of the Ozarks Computer Center, the IT helpdesk for the college.  Typical work orders include: troubleshooting PC’s, printers, and other associated devices; diagnosing issues over the phone; explaining technical concepts to laypersons; discussing issues via live chat and phone calls with manufacturers; and updating and troubleshooting a plethora of software from various vendors.</i></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-padding"><b>Mowing crew / College of the Ozarks Landscaping</b></h5>
+          <h5><b>Mowing crew / College of the Ozarks Landscaping</b></h5>
           <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Jun 2017</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p class="w3-padding"><i>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</i></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-padding"><b>Student Manager / Bobcat Food Services</b></h5>
+          <h5><b>Student Manager / Bobcat Food Services</b></h5>
           <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2016</h6>
-          <p>For a single semester, I worked as a student manager at Bobcat Food Services, the department of the College of the Ozarks responsible for feeding the students, faculty, and staff.  As a student manager, I was expected to manage between six and twenty student workers, occasionally assisted by another student manager.  Two full-time managers and small full-time kitchen staff provided supervision.  I acted as an intermediary between upper management and the student workers, assured timely and safe preparation of food, and directed the student workers in maintaining a clean and professional dining environment.  Occasionally, I was expected to assist or direct catered meals, including an annual alumni dinner.  Expectations included conflict management, employee relations, and professional interaction with students, faculty, staff, and members of the public. </p><br>
+          <p class="w3-padding"><i>For a single semester, I worked as a student manager at Bobcat Food Services, the department of the College of the Ozarks responsible for feeding the students, faculty, and staff.  As a student manager, I was expected to manage between six and twenty student workers, occasionally assisted by another student manager.  Two full-time managers and small full-time kitchen staff provided supervision.  I acted as an intermediary between upper management and the student workers, assured timely and safe preparation of food, and directed the student workers in maintaining a clean and professional dining environment.  Occasionally, I was expected to assist or direct catered meals, including an annual alumni dinner.  Expectations included conflict management, employee relations, and professional interaction with students, faculty, staff, and members of the public.</i></p><br>
         </div>
       </div>
 
@@ -359,11 +385,10 @@ h5 {
           <hr>
         </div-->
         <div class="w3-container">
-          <h5 class="w3-padding"><b>College of the Ozarks</b></h5>
-          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag current-box w3-round">Current</span></h6>
-          <p>Bachelor's Degree</p>
-          <p>I am currently pursuing a BS in computer sciene at the College of the Ozarks.</p>
-          <hr>
+          <h5><b>College of the Ozarks / Bachelor's Degree</b></h5>
+          <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag current-box w3-round">Present</span></h6>
+          <!--<p>Bachelor's Degree</p>-->
+          <p class="w3-padding">I am currently pursuing a BS in computer sciene at the College of the Ozarks.</p>
         </div>
       </div>
       <br>
@@ -372,12 +397,11 @@ h5 {
       <div class=section "w3-container w3-card-2 w3-white">
         <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge "></i>Projects</h2>
         <div class="w3-container">
-          <h5 class="w3-padding"><b>Best Books</b></h5>
+          <h5><b>Best Books / Full-stack bookstore application</b></h5>
           <h6 class="date"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2017</h6>
-          <p>Full-stack bookstore application</p>
-          <p>For my Database Systems class at College of the Ozarks, taken in Spring of 2017, the final project consisted of an online bookstore.  The professor allowed much freedom of design in pursuit of his requirements.  My partner, Joshua Dowd, and I opted to employ a CLI for simplicity of design, testing, and deployment and used MySQL as the backend.  We used MVC design to streamline separation of functionality as well as enforce user permissions.  Customers could create accounts, log in and out, search and view books, add books to their carts, and place orders.  Admin capabilities, which I primarily focused on, included: CRUD functionality on a variety of information (user addresses, publisher contact information, prices, book information, and more); updating orders between processing, shipping, delivered, cancelled, and returned; managing user permissions; and generating reports in CSV format.  The database included 11 tables in BCNF.  My partner and I designed and deployed the database, populated it with data, wrote 107 stored procedures, wrote the objects for processing the data and accompanying DAO classes for storing it in the database, wrote admin and customer controllers for parsing user input and passing commands to the DAO, wrote a master controller to direct user input to the appropriate specialized controller, wrote a class for elegantly displaying information in the console, and wrote a class for translating information in the database into CSV format for report generation.  Notable functionality includes: hashing of user passwords using the bcrypt algorithm; encrypting user credit cards with AES-256 (due to time constraints, with the professor’s permission, the key to each number was a hash of the CVV number, required for checkout); soft delete of user accounts allowing retrieval of information for data-mining or account reopening; and searching algorithms optimized to execute as few calls on the database as possible.  The full source code of the project is available on my GitHub account.
-          </p>
-          <hr>
+          <!--<p>Full-stack bookstore application</p>-->
+          <p class="w3-padding"><i>For my Database Systems class at College of the Ozarks, taken in Spring of 2017, the final project consisted of an online bookstore.  The professor allowed much freedom of design in pursuit of his requirements.  My partner, Joshua Dowd, and I opted to employ a CLI for simplicity of design, testing, and deployment and used MySQL as the backend.  We used MVC design to streamline separation of functionality as well as enforce user permissions.  Customers could create accounts, log in and out, search and view books, add books to their carts, and place orders.  Admin capabilities, which I primarily focused on, included: CRUD functionality on a variety of information (user addresses, publisher contact information, prices, book information, and more); updating orders between processing, shipping, delivered, cancelled, and returned; managing user permissions; and generating reports in CSV format.  The database included 11 tables in BCNF.  My partner and I designed and deployed the database, populated it with data, wrote 107 stored procedures, wrote the objects for processing the data and accompanying DAO classes for storing it in the database, wrote admin and customer controllers for parsing user input and passing commands to the DAO, wrote a master controller to direct user input to the appropriate specialized controller, wrote a class for elegantly displaying information in the console, and wrote a class for translating information in the database into CSV format for report generation.  Notable functionality includes: hashing of user passwords using the bcrypt algorithm; encrypting user credit cards with AES-256 (due to time constraints, with the professor’s permission, the key to each number was a hash of the CVV number, required for checkout); soft delete of user accounts allowing retrieval of information for data-mining or account reopening; and searching algorithms optimized to execute as few calls on the database as possible.  The full source code of the project is available on my GitHub account.
+          </i></p>
         </div>
       </div>
 
