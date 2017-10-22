@@ -1,0 +1,104 @@
+/*
+body grey: #424242
+background grey: #757575
+medium grey: #616161
+
+font color grey: #b0b3b3
+
+purple: #4527a0
+green: #66bb6a
+yellow: #ffd740
+*/
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Roboto", sans-serif
+}
+
+body {
+  background-color: #424242;
+}
+
+footer {
+  background-color: #757575;
+}
+
+hr {
+  color: #424949;
+}
+
+h2 {
+  color: #66bb6a;
+}
+
+h5 {
+  color: #f4511e;
+  /*background-color: #424242;*/
+}
+
+.name {
+  background-color: #616161;
+  color: #D5DBDB;
+}
+
+.current-box {
+  background-color: #4527a0;
+  color: #D5DBDB;
+}
+
+.sidebar {
+  background-color: #757575;
+  color: #D5DBDB;
+}
+
+.date {
+  color: #4527a0;
+}
+
+.info {
+  color: #4527a0;
+}
+
+.section {
+  background-color: #757575;
+}
+
+.section p {
+  color: #b0b3b3;
+  background-color: #424242;
+}
+
+.section .fa, h2 {
+  color: #ffd740;
+}
+
+.date .fa {
+  color: #4527a0;
+}
+
+.skills-container h6 {
+  color: #f4511e;
+  background-color: #757575;
+  padding: 5px;
+  margin-left: 0px;
+  float: left;
+}
+
+.skill-header {
+  color: #ffd740;
+}
+
+.skill-title {
+  color: #f4511e;
+  background-color: #424242;
+  padding: 5px;
+  margin-left: 0px;
+  float: left;
+}
+
+.skill-level {
+  background-color: #66bb6a;
+  height: 15px;
+}
+
+.skill-level-background {
+  background-color: #424242;
+}
