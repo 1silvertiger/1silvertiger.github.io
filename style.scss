@@ -1,0 +1,131 @@
+$font-stack: "Roboto", sans-serif;
+/*$font-color: #b0b3b3;*/
+$font-color: #D5DBDB;
+
+$dark-background-color: #424242;
+/*$light-background-color: #616161; (went with name background)*/
+$light-background-color: #757575;
+
+$purple: #4527a0;
+$green: #66bb6a;
+$yellow: #ffd740;
+$red: #f4511e;
+$blue: #3293e0;
+
+$skill-level-bar-height: 15px;
+
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: $font-stack;
+}
+
+body {
+  background-color: $dark-background-color;
+}
+
+footer {
+  background-color: $light-background-color;
+
+  p {
+    color: $blue;
+  }
+
+  i {
+    color: $purple;
+  }
+}
+
+hr {
+  color: #424949;
+}
+
+h2 {
+  color: $green;
+}
+
+h5 {
+  color: $blue;
+  /*background-color: $dark-background-color;*/
+}
+
+.current-box {
+  background-color: $purple;
+  color: $font-color;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.date {
+  color: $purple;
+
+  .fa {
+    color: $purple;
+  }
+}
+
+.heading {
+  color: $purple;
+}
+
+.info {
+  color: $purple;
+}
+
+.name {
+  background-color: $light-background-color;
+  color: $font-color;
+}
+
+.section {
+  background-color: $light-background-color;
+
+  p {
+    /*color: #b0b3b3;*/
+    color: $font-color;
+    background-color: $dark-background-color;
+  }
+
+  .fa, h2 {
+    @extend .heading;
+  }
+}
+
+.sidebar {
+  background-color: $light-background-color;
+  color: $font-color;
+}
+
+.skills-container h6 {
+  color: $blue;
+  background-color: $light-background-color;
+  padding: 5px;
+  margin-left: 0px;
+  float: left;
+}
+
+
+.skill-header {
+  color: $purple;
+}
+
+.skill-title {
+  color: $blue;
+  background-color: $dark-background-color;
+  padding: 5px;
+  margin-left: 0px;
+  float: left;
+}
+
+.skill-level {
+  background-color: $green;
+  height: $skill-level-bar-height;
+}
+
+.skill-level-background {
+  background-color: $dark-background-color;
+}
+
+.title {
+  color: $blue;
+}

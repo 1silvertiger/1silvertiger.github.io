@@ -1,104 +1,87 @@
-/*
-body grey: #424242
-background grey: #757575
-medium grey: #616161
-
-font color grey: #b0b3b3
-
-purple: #4527a0
-green: #66bb6a
-yellow: #ffd740
-*/
-html,body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Roboto", sans-serif
-}
+/*$font-color: #b0b3b3;*/
+/*$light-background-color: #616161; (went with name background)*/
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif; }
 
 body {
-  background-color: #424242;
-}
+  background-color: #424242; }
 
 footer {
-  background-color: #757575;
-}
+  background-color: #757575; }
+  footer p {
+    color: #3293e0; }
+  footer i {
+    color: #4527a0; }
 
 hr {
-  color: #424949;
-}
+  color: #424949; }
 
 h2 {
-  color: #66bb6a;
-}
+  color: #66bb6a; }
 
 h5 {
-  color: #f4511e;
-  /*background-color: #424242;*/
-}
-
-.name {
-  background-color: #616161;
-  color: #D5DBDB;
-}
+  color: #3293e0;
+  /*background-color: $dark-background-color;*/ }
 
 .current-box {
   background-color: #4527a0;
   color: #D5DBDB;
-}
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center; }
+
+.date {
+  color: #4527a0; }
+  .date .fa {
+    color: #4527a0; }
+
+.heading, .section .fa, .section h2 {
+  color: #4527a0; }
+
+.info {
+  color: #4527a0; }
+
+.name {
+  background-color: #757575;
+  color: #D5DBDB; }
+
+.section {
+  background-color: #757575; }
+  .section p {
+    /*color: #b0b3b3;*/
+    color: #D5DBDB;
+    background-color: #424242; }
 
 .sidebar {
   background-color: #757575;
-  color: #D5DBDB;
-}
-
-.date {
-  color: #4527a0;
-}
-
-.info {
-  color: #4527a0;
-}
-
-.section {
-  background-color: #757575;
-}
-
-.section p {
-  color: #b0b3b3;
-  background-color: #424242;
-}
-
-.section .fa, h2 {
-  color: #ffd740;
-}
-
-.date .fa {
-  color: #4527a0;
-}
+  color: #D5DBDB; }
 
 .skills-container h6 {
-  color: #f4511e;
+  color: #3293e0;
   background-color: #757575;
   padding: 5px;
   margin-left: 0px;
-  float: left;
-}
+  float: left; }
 
 .skill-header {
-  color: #ffd740;
-}
+  color: #4527a0; }
 
 .skill-title {
-  color: #f4511e;
+  color: #3293e0;
   background-color: #424242;
   padding: 5px;
   margin-left: 0px;
-  float: left;
-}
+  float: left; }
 
 .skill-level {
   background-color: #66bb6a;
-  height: 15px;
-}
+  height: 15px; }
 
 .skill-level-background {
-  background-color: #424242;
-}
+  background-color: #424242; }
+
+.title {
+  color: #3293e0; }
+
+/*# sourceMappingURL=style.css.map */
