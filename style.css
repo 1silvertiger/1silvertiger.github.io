@@ -1,5 +1,4 @@
-/*$font-color: #b0b3b3;*/
-/*$light-background-color: #616161; (went with name background)*/
+
 html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif; }
 
@@ -20,8 +19,7 @@ h2 {
   color: #66bb6a; }
 
 h5 {
-  color: #3293e0;
-  /*background-color: $dark-background-color;*/ }
+  color: #3293e0; }
 
 .current-box {
   background-color: #4527a0;
@@ -49,7 +47,6 @@ h5 {
 .section {
   background-color: #757575; }
   .section p {
-    /*color: #b0b3b3;*/
     color: #D5DBDB;
     background-color: #424242; }
 
