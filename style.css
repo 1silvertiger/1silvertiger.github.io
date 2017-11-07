@@ -44,10 +44,19 @@ h5 {
 
 .info {
   color: #4527a0; }
+  .info a {
+    text-decoration: none; }
 
 .name {
   background-color: #757575;
-  color: #D5DBDB; }
+  color: #D5DBDB;
+  margin-left: 16px;
+  margin-bottom: 16px; }
+  .name h2 {
+    color: #D5DBDB;
+    margin: 0px; }
+  .name p {
+    margin: 0px; }
 
 .section {
   background-color: #757575; }

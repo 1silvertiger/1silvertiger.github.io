@@ -74,11 +74,23 @@ h5 {
 
 .info {
   color: $purple;
+  a {
+    text-decoration: none;
+  }
 }
 
 .name {
   background-color: $light-background-color;
   color: $font-color;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  h2 {
+    color: $font-color;
+    margin:0px;
+  }
+  p {
+    margin: 0px;
+  }
 }
 
 .section {
