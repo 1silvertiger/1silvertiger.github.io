@@ -47,6 +47,10 @@ h5 {
   /*background-color: $dark-background-color;*/
 }
 
+.accordion-body {
+  display: none;
+}
+
 .current-box {
   background-color: $purple;
   color: $font-color;
@@ -107,6 +111,9 @@ h5 {
 
 .skill-header {
   color: $purple;
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .skill-title {
