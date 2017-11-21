@@ -1,7 +1,12 @@
-/*$font-color: #b0b3b3;*/
-/*$light-background-color: #616161; (went with name background)*/
 html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif; }
+
+a {
+  color: #B39DDB;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration-line: underline; }
 
 body {
   background-color: #424242; }
@@ -9,93 +14,97 @@ body {
 footer {
   background-color: #757575; }
   footer p {
-    color: #3293e0; }
-  footer i {
-    color: #4527a0; }
+    color: #58a5f0; }
 
 hr {
   color: #424949; }
 
-h2 {
-  color: #66bb6a; }
-
-h5 {
-  color: #3293e0;
-  /*background-color: $dark-background-color;*/ }
-
 .accordion-body {
   display: none; }
 
-.current-box {
-  background-color: #4527a0;
-  color: #D5DBDB;
-  display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: center; }
-
 .date {
-  color: #4527a0; }
+  color: #66bb6a; }
   .date .fa {
-    color: #4527a0; }
-
-.heading, .section .fa, .section h2 {
-  color: #4527a0; }
+    color: #66bb6a; }
+  .date .current-box {
+    background-color: #66bb6a;
+    color: #D5DBDB;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center; }
 
 .info {
-  color: #4527a0; }
-  .info a {
-    text-decoration: none; }
+  color: #FFA000; }
 
 .name {
   background-color: #757575;
-  color: #D5DBDB;
+  color: #FFA000;
   margin-left: 16px;
+  margin-right: 16px;
   margin-bottom: 16px; }
   .name h2 {
-    color: #D5DBDB;
     margin: 0px; }
   .name p {
     margin: 0px; }
 
 .section {
   background-color: #757575; }
+  .section h2 {
+    color: #58a5f0; }
+    .section h2 .fa {
+      color: #58a5f0; }
+  .section h5 {
+    color: #FFEE58; }
   .section p {
     /*color: #b0b3b3;*/
     color: #D5DBDB;
     background-color: #424242; }
+  .section a {
+    animation-name: text-grow;
+    animation-duration: 0.5s; }
 
 .sidebar {
   background-color: #757575;
   color: #D5DBDB; }
 
 .skills-container h6 {
-  color: #3293e0;
-  background-color: #757575;
   padding: 5px;
   margin-left: 0px;
   float: left; }
 
 .skill-header {
-  color: #4527a0; }
+  color: #58a5f0; }
   .skill-header :hover {
     cursor: pointer; }
+  .skill-header .fa-chevron-down {
+    float: right; }
+  .skill-header .fa-chevron-up {
+    float: right; }
 
 .skill-title {
-  color: #3293e0;
+  color: #FFEE58;
   background-color: #424242;
   padding: 5px;
   margin-left: 0px;
   float: left; }
 
-.skill-level {
+.proficiency-bar {
   background-color: #66bb6a;
   height: 15px; }
 
-.skill-level-background {
+.proficiency-bar-background {
   background-color: #424242; }
 
-.title {
-  color: #3293e0; }
+@keyframes text-grow {
+  from {
+    font-size: inherit; }
+  to {
+    font-size: 18; } }
+@keyframes text-shrink {
+  from {
+    font-size: 18; }
+  to {
+    font-size: inherit; } }
 
 /*# sourceMappingURL=style.css.map */

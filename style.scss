@@ -1,150 +1,197 @@
+//Font style
 $font-stack: "Roboto", sans-serif;
-/*$font-color: #b0b3b3;*/
+//$font-color: #b0b3b3;
 $font-color: #D5DBDB;
+$grow-font-size: 18;
 
-$dark-background-color: #424242;
-/*$light-background-color: #616161; (went with name background)*/
-$light-background-color: #757575;
-
-$purple: #4527a0;
+//Palette
+$dark-grey: #424242;
+$light-grey: #757575;
+$purple: #B39DDB;
 $green: #66bb6a;
+$green2: #4CAF50;
 $yellow: #ffd740;
-$red: #f4511e;
-$blue: #3293e0;
+//$red: #f4511e;
+$blue: #01579B;
+$light-blue: #58a5f0;
+$amber: #FFA000;
+$yellow: #FFEE58;
+$red: #F06292;
+//$light-background-color: #616161; (went with name background)
+//$blue: #3293e0;
+//$green: #66bb6a;
+//$purple: #4527a0;
 
-$skill-level-bar-height: 15px;
+//Colors
+$contact-color: $amber;
+$section-header-color: $light-blue;
+$entry-title-color: $yellow;
+$date-color: $green;
+$proficiency-bar-color: $green;
+$skill-title-color: $yellow;
+$skill-header-color: $light-blue;
+$dark-background-color: $dark-grey;
+$light-background-color: $light-grey;
+$link-font-color: $purple;
+$name-color: $amber;
+
+$proficiency-bar-bar-height: 15px;
 
 html,body,h1,h2,h3,h4,h5,h6 {
-  font-family: $font-stack;
+     font-family: $font-stack;
+}
+
+a {
+     color: $link-font-color;
+     text-decoration: none;
+}
+
+a:hover {
+     text-decoration-line: underline;
+     //color:red;
 }
 
 body {
-  background-color: $dark-background-color;
+     background-color: $dark-background-color;
 }
 
 footer {
-  background-color: $light-background-color;
+     background-color: $light-background-color;
 
-  p {
-    color: $blue;
-  }
-
-  i {
-    color: $purple;
-  }
+     p {
+          color: $light-blue;
+     }
 }
 
 hr {
-  color: #424949;
-}
-
-h2 {
-  color: $green;
-}
-
-h5 {
-  color: $blue;
-  /*background-color: $dark-background-color;*/
+     color: #424949;
 }
 
 .accordion-body {
-  display: none;
-}
-
-.current-box {
-  background-color: $purple;
-  color: $font-color;
-  display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: center;
+     display: none;
 }
 
 .date {
-  color: $purple;
+     color: $date-color;
 
-  .fa {
-    color: $purple;
-  }
-}
+     .fa {
+          color: $date-color;
+     }
 
-.heading {
-  color: $purple;
+     .current-box {
+          background-color: $date-color;
+          color: $font-color;
+          display: inline-block;
+          padding-left: 8px;
+          padding-right: 8px;
+          text-align: center;
+     }
 }
 
 .info {
-  color: $purple;
-  a {
-    text-decoration: none;
-  }
+     color: $contact-color;
 }
 
 .name {
-  background-color: $light-background-color;
-  color: $font-color;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  h2 {
-    color: $font-color;
-    margin:0px;
-  }
-  p {
-    margin: 0px;
-  }
+     background-color: $light-background-color;
+     color: $name-color;
+     margin-left: 16px;
+     margin-right: 16px;
+     margin-bottom: 16px;
+
+     h2 {
+          //color: $font-color;
+          margin:0px;
+     }
+
+     p {
+          margin: 0px;
+     }
 }
 
 .section {
-  background-color: $light-background-color;
+     background-color: $light-background-color;
 
-  p {
-    /*color: #b0b3b3;*/
-    color: $font-color;
-    background-color: $dark-background-color;
-  }
+     h2 {
+          color: $section-header-color;
+          .fa {
+               color: $section-header-color;
+          }
+     }
 
-  .fa, h2 {
-    @extend .heading;
-  }
+     h5 {
+          color: $entry-title-color;
+     }
+
+     p {
+          /*color: #b0b3b3;*/
+          color: $font-color;
+          background-color: $dark-background-color;
+     }
+
+     a {
+          animation-name: text-grow;
+          animation-duration: 0.5s;
+     }
 }
 
 .sidebar {
-  background-color: $light-background-color;
-  color: $font-color;
+     background-color: $light-background-color;
+     color: $font-color;
 }
 
 .skills-container h6 {
-  color: $blue;
-  background-color: $light-background-color;
-  padding: 5px;
-  margin-left: 0px;
-  float: left;
+     //color: $blue;
+     //background-color: $light-background-color;
+     padding: 5px;
+     margin-left: 0px;
+     float: left;
 }
 
 
 .skill-header {
-  color: $purple;
-  :hover {
-    cursor: pointer;
-  }
+     color: $skill-header-color;
+
+     :hover {
+          cursor: pointer;
+     }
+
+     .fa-chevron-down {
+          float:right;
+     }
+
+     .fa-chevron-up {
+          float:right;
+     }
 }
 
 .skill-title {
-  color: $blue;
-  background-color: $dark-background-color;
-  padding: 5px;
-  margin-left: 0px;
-  float: left;
+     color: $skill-title-color;
+     background-color: $dark-background-color;
+     padding: 5px;
+     margin-left: 0px;
+     float: left;
 }
 
-.skill-level {
-  background-color: $green;
-  height: $skill-level-bar-height;
+.proficiency-bar {
+     background-color: $proficiency-bar-color;
+     height: $proficiency-bar-bar-height;
 }
 
-.skill-level-background {
-  background-color: $dark-background-color;
+.proficiency-bar-background {
+     background-color: $dark-background-color;
 }
 
-.title {
-  color: $blue;
+.text-grow {
+
+}
+
+@keyframes text-grow {
+     from{font-size: inherit}
+     to{font-size: $grow-font-size}
+}
+
+@keyframes text-shrink {
+     from{font-size: $grow-font-size}
+     to{font-size: inherit}
 }
