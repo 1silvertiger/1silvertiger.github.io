@@ -91,7 +91,8 @@ hr {
 
 .proficiency-bar {
   background-color: #66bb6a;
-  height: 15px; }
+  height: 15px;
+  color: #424242; }
 
 .proficiency-bar-background {
   background-color: #424242; }
