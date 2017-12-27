@@ -1,6 +1,5 @@
 //Font style
 $font-stack: "Roboto", sans-serif;
-//$font-color: #b0b3b3;
 $font-color: #D5DBDB;
 $grow-font-size: 18;
 
@@ -11,16 +10,11 @@ $purple: #B39DDB;
 $green: #66bb6a;
 $green2: #4CAF50;
 $yellow: #ffd740;
-//$red: #f4511e;
 $blue: #01579B;
 $light-blue: #58a5f0;
 $amber: #FFA000;
 $yellow: #FFEE58;
 $red: #F06292;
-//$light-background-color: #616161; (went with name background)
-//$blue: #3293e0;
-//$green: #66bb6a;
-//$purple: #4527a0;
 
 //Colors
 $contact-color: $amber;
@@ -48,7 +42,6 @@ a {
 
 a:hover {
      text-decoration-line: underline;
-     //color:red;
 }
 
 body {
@@ -61,10 +54,6 @@ footer {
      p {
           color: $light-blue;
      }
-}
-
-hr {
-     color: #424949;
 }
 
 .accordion-body {
@@ -95,12 +84,9 @@ hr {
 .name {
      background-color: $light-background-color;
      color: $name-color;
-     margin-left: 16px;
-     margin-right: 16px;
-     margin-bottom: 16px;
+     margin: 16px;
 
      h2 {
-          //color: $font-color;
           margin:0px;
      }
 
@@ -114,6 +100,11 @@ hr {
 
      h2 {
           color: $section-header-color;
+          background-color: $light-background-color;
+          position: sticky;
+          top: 0;
+          z-index: 1;
+
           .fa {
                color: $section-header-color;
           }
@@ -121,10 +112,12 @@ hr {
 
      h5 {
           color: $entry-title-color;
+          background-color: $light-background-color;
+          position: sticky;
+          top: 72px;
      }
 
      p {
-          /*color: #b0b3b3;*/
           color: $font-color;
           background-color: $dark-background-color;
      }
@@ -141,8 +134,6 @@ hr {
 }
 
 .skills-container h6 {
-     //color: $blue;
-     //background-color: $light-background-color;
      padding: 5px;
      margin-left: 0px;
      float: left;
@@ -183,16 +174,3 @@ hr {
      background-color: $dark-background-color;
 }
 
-.text-grow {
-
-}
-
-@keyframes text-grow {
-     from{font-size: inherit}
-     to{font-size: $grow-font-size}
-}
-
-@keyframes text-shrink {
-     from{font-size: $grow-font-size}
-     to{font-size: inherit}
-}

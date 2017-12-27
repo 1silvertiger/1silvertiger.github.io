@@ -16,9 +16,6 @@ footer {
   footer p {
     color: #58a5f0; }
 
-hr {
-  color: #424949; }
-
 .accordion-body {
   display: none; }
 
@@ -40,9 +37,7 @@ hr {
 .name {
   background-color: #757575;
   color: #FFA000;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px; }
+  margin: 16px; }
   .name h2 {
     margin: 0px; }
   .name p {
@@ -51,13 +46,19 @@ hr {
 .section {
   background-color: #757575; }
   .section h2 {
-    color: #58a5f0; }
+    color: #58a5f0;
+    background-color: #757575;
+    position: sticky;
+    top: 0;
+    z-index: 1; }
     .section h2 .fa {
       color: #58a5f0; }
   .section h5 {
-    color: #FFEE58; }
+    color: #FFEE58;
+    background-color: #757575;
+    position: sticky;
+    top: 72px; }
   .section p {
-    /*color: #b0b3b3;*/
     color: #D5DBDB;
     background-color: #424242; }
   .section a {
@@ -96,16 +97,5 @@ hr {
 
 .proficiency-bar-background {
   background-color: #424242; }
-
-@keyframes text-grow {
-  from {
-    font-size: inherit; }
-  to {
-    font-size: 18; } }
-@keyframes text-shrink {
-  from {
-    font-size: 18; }
-  to {
-    font-size: inherit; } }
 
 /*# sourceMappingURL=style.css.map */
