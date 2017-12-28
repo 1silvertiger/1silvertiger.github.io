@@ -40,10 +40,6 @@ a {
      text-decoration: none;
 }
 
-a:hover {
-     text-decoration-line: underline;
-}
-
 body {
      background-color: $dark-background-color;
 }
@@ -115,6 +111,21 @@ footer {
           background-color: $light-background-color;
           position: sticky;
           top: 72px;
+
+          a {
+               color: $entry-title-color;
+          }
+
+          a:hover {
+               text-shadow: none;
+          }
+
+          .fa {
+               color: $entry-title-color;
+               padding-left: 5px;
+               font-size: 14px;
+          }
+
      }
 
      p {
@@ -122,10 +133,16 @@ footer {
           background-color: $dark-background-color;
      }
 
-     a {
-          animation-name: text-grow;
-          animation-duration: 0.5s;
+     a:hover {
+          text-shadow: 0px 0px 3px;
      }
+}
+
+.shadow-pulse {
+     animation-name: shadow-pulse;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+     animation-duration: 1.5s;
 }
 
 .sidebar {
@@ -174,3 +191,8 @@ footer {
      background-color: $dark-background-color;
 }
 
+@keyframes shadow-pulse {
+     0% {text-shadow: 0px 0px 0px;}
+     50%  {text-shadow: 0px 0px 5px;}
+     100%  {text-shadow: 0px 0px 0px;}
+}
