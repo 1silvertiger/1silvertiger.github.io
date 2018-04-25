@@ -16,18 +16,28 @@ $amber: #FFA000;
 $yellow: #FFEE58;
 $red: #F06292;
 
+$atom-blue: hsl(208,100%,50%);
+$atom-green: hsl(160,70%,42%);
+$atom-orange: hsl(32,60%,50%);
+$atom-pink: #D831B0;
+$atom-yellow: #EBDD5B;
+
+$atom-dark-grey: #262831;
+$atom-light-grey: #313440;
+//https://github.com/atom/one-dark-ui/blob/master/styles/ui-variables-custom.less
+
 //Colors
-$contact-color: $amber;
-$section-header-color: $light-blue;
-$entry-title-color: $yellow;
-$date-color: $green;
-$proficiency-bar-color: $green;
-$skill-title-color: $yellow;
-$skill-header-color: $light-blue;
-$dark-background-color: $dark-grey;
-$light-background-color: $light-grey;
+$contact-color: $atom-orange;
+$section-header-color: $atom-blue;
+$entry-title-color: $atom-yellow;
+$date-color: $atom-green;
+$proficiency-bar-color: $atom-green;
+$skill-title-color: $atom-yellow;
+$skill-header-color: $atom-blue;
+$dark-background-color: $atom-dark-grey;
+$light-background-color: $atom-light-grey;
 $link-font-color: $purple;
-$name-color: $amber;
+$name-color: $atom-orange;
 
 $proficiency-bar-bar-height: 15px;
 
