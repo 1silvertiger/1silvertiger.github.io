@@ -1,119 +1,188 @@
 html, body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 a {
   color: #B39DDB;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 body {
-  background-color: #424242; }
+  background-color: #262831;
+}
 
 footer {
-  background-color: #757575; }
-  footer p {
-    color: #58a5f0; }
+  background-color: #313440;
+}
+
+footer p {
+  color: #58a5f0;
+}
 
 .accordion-body {
-  display: none; }
+  display: none;
+}
 
 .date {
-  color: #66bb6a; }
-  .date .fa {
-    color: #66bb6a; }
-  .date .current-box {
-    background-color: #66bb6a;
-    color: #D5DBDB;
-    display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center; }
+  color: #20b684;
+}
+
+.date .fa {
+  color: #20b684;
+}
+
+.date .current-box {
+  background-color: #20b684;
+  color: #D5DBDB;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
 
 .info {
-  color: #FFA000; }
+  color: #cc8533;
+}
 
 .name {
-  background-color: #757575;
-  color: #FFA000;
-  margin: 16px; }
-  .name h2 {
-    margin: 0px; }
-  .name p {
-    margin: 0px; }
+  background-color: #313440;
+  color: #cc8533;
+  margin: 16px;
+}
+
+.name h2 {
+  margin: 0px;
+}
+
+.name p {
+  margin: 0px;
+}
 
 .section {
-  background-color: #757575; }
-  .section h2 {
-    color: #58a5f0;
-    background-color: #757575;
-    position: sticky;
-    top: 0;
-    z-index: 1; }
-    .section h2 .fa {
-      color: #58a5f0; }
-  .section h5 {
-    color: #FFEE58;
-    background-color: #757575;
-    position: sticky;
-    top: 72px; }
-    .section h5 a {
-      color: #FFEE58; }
-    .section h5 a:hover {
-      text-shadow: none; }
-    .section h5 .fa {
-      color: #FFEE58;
-      padding-left: 5px;
-      font-size: 14px; }
-  .section p {
-    color: #D5DBDB;
-    background-color: #424242; }
-  .section a:hover {
-    text-shadow: 0px 0px 3px; }
+  background-color: #313440;
+}
+
+.section h2 {
+  color: #0088ff;
+  background-color: #313440;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.section h2 .fa {
+  color: #0088ff;
+}
+
+.section h5 {
+  color: #EBDD5B;
+  background-color: #313440;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 72px;
+}
+
+.section h5 a {
+  color: #EBDD5B;
+}
+
+.section h5 a:hover {
+  text-shadow: none;
+}
+
+.section h5 .fa {
+  color: #EBDD5B;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.section p {
+  color: #D5DBDB;
+  background-color: #262831;
+}
+
+.section a:hover {
+  text-shadow: 0px 0px 3px;
+}
 
 .shadow-pulse {
-  animation-name: shadow-pulse;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1.5s; }
+  -webkit-animation-name: shadow-pulse;
+          animation-name: shadow-pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
 
 .sidebar {
-  background-color: #757575;
-  color: #D5DBDB; }
+  background-color: #313440;
+  color: #D5DBDB;
+}
 
 .skills-container h6 {
   padding: 5px;
   margin-left: 0px;
-  float: left; }
+  float: left;
+}
 
 .skill-header {
-  color: #58a5f0; }
-  .skill-header :hover {
-    cursor: pointer; }
-  .skill-header .fa-chevron-down {
-    float: right; }
-  .skill-header .fa-chevron-up {
-    float: right; }
+  color: #0088ff;
+}
+
+.skill-header :hover {
+  cursor: pointer;
+}
+
+.skill-header .fa-chevron-down {
+  float: right;
+}
+
+.skill-header .fa-chevron-up {
+  float: right;
+}
 
 .skill-title {
-  color: #FFEE58;
-  background-color: #424242;
+  color: #EBDD5B;
+  background-color: #262831;
   padding: 5px;
   margin-left: 0px;
-  float: left; }
+  float: left;
+}
 
 .proficiency-bar {
-  background-color: #66bb6a;
+  background-color: #20b684;
   height: 15px;
-  color: #424242; }
+  color: #262831;
+}
 
 .proficiency-bar-background {
-  background-color: #424242; }
+  background-color: #262831;
+}
+
+@-webkit-keyframes shadow-pulse {
+  0% {
+    text-shadow: 0px 0px 0px;
+  }
+  50% {
+    text-shadow: 0px 0px 5px;
+  }
+  100% {
+    text-shadow: 0px 0px 0px;
+  }
+}
 
 @keyframes shadow-pulse {
   0% {
-    text-shadow: 0px 0px 0px; }
+    text-shadow: 0px 0px 0px;
+  }
   50% {
-    text-shadow: 0px 0px 5px; }
+    text-shadow: 0px 0px 5px;
+  }
   100% {
-    text-shadow: 0px 0px 0px; } }
-
+    text-shadow: 0px 0px 0px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
