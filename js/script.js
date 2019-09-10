@@ -13,28 +13,27 @@ const projectsUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger
          education: education.array,
          workExperience: workExperience.array,
          projects: projects.array
+      },
+      mounted: function () {
+         $(".skill-header").on("click", function () {
+            $(this).find(".fa-chevron-down").toggleClass("fa-flip-vertical", 'slow');
+            $(this).next().slideToggle("slow");
+         });
+
+         $(".skill").hover(function () {
+            $(this).find(".proficiency-bar").find("b").text($(this).find(".proficiency-bar")[0].style.width).fadeIn("fast");
+         }, function () {
+            $(this).find(".proficiency-bar").find("b").fadeOut("fast");
+         });
+
+         $("h5").hover(function () {
+            $(this).find(".fa").addClass("shadow-pulse");
+         }, function () {
+            $(this).find(".fa").removeClass("shadow-pulse");
+         });
       }
    });
 })();
-
-
-
-$(".skill-header").on("click", function () {
-   $(this).find(".fa-chevron-down").toggleClass("fa-flip-vertical", 'slow');
-   $(this).next().slideToggle("slow");
-});
-
-$(".skill").hover(function () {
-   $(this).find(".proficiency-bar").find("b").text($(this).find(".proficiency-bar")[0].style.width).fadeIn("fast");
-}, function () {
-   $(this).find(".proficiency-bar").find("b").fadeOut("fast");
-});
-
-$("h5").hover(function () {
-   $(this).find(".fa").addClass("shadow-pulse");
-}, function () {
-   $(this).find(".fa").removeClass("shadow-pulse");
-});
 
 async function syncFetchJson(url) {
    const response = await fetch(url);
