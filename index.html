@@ -471,9 +471,7 @@
                             <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
 
                     <div v-for="degree in education" class="w3-container">
-                        <h5>
-                            <b>{{ degree.institution }} / {{ degree.level }}</b>
-                        </h5>
+                        <h5>{{ degree.institution }} / {{ degree.level }}</h5>
                         <h6 class="date">
                             <i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ degree.beginMonth }} {{ degree.beginYear }} -
                             <span v-if="!degree.endMonth || !degree.endYear" class="current-box w3-round">Present</span>
@@ -483,30 +481,7 @@
                             <i>{{ degree.description }}</i>
                         </p>
                     </div>
-
-                    <!-- <h2 class="w3-padding-16">
-                        <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
-                    <div class="w3-container">
-                        <h5>
-                            <b>College of the Ozarks / Undergraduate</b>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 -
-                            <span class="current-box w3-round">Present</span>
-                        </h6>
-                        <p class="w3-padding">
-                            <i>I am currently pursuing a double major in Computer Science and Mathematics with a GPA of
-                                3.3
-                                at the College of the Ozarks. College of the Ozarks is a work college, where students
-                                work
-                                15 hours a week to pay for tuition. More information on the work program can be found at
-                                the college's
-                                <a href="https://www.cofo.edu/Page/Work-Education.96.html" target="_blank">website.</a>
-                            </i>
-                        </p>
-                    </div> -->
                 </section>
-                <!--<br>-->
 
                 <!-- Work experience panel -->
                 <section class="section w3-container w3-card-2 w3-margin-bottom">
@@ -532,9 +507,7 @@
                         <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge "></i>Projects</h2>
 
                     <div v-for="project in projects" class="w3-container">
-                        <h5>
-                            <b>{{ project.title }} / {{ project.summary }}</b>
-                        </h5>
+                        <h5>{{ project.title }} / {{ project.summary }}</h5>
                         <h6 class="date">
                             <i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ project.beginMonth }} {{ project.beginYear}} -
                             <span v-if="!project.endMonth || !project.endYear" class="current-box w3-round">Ongoing</span>
@@ -544,126 +517,6 @@
                             <i>{{ project.description }}</i>
                         </p>
                     </div>
-
-                    <!-- <div class="w3-container">
-                        <h5>
-                            <b>Student Helpdesk / Full-stack IT helpdesk web application</b>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017 -
-                            <span class="current-box w3-round">Ongoing</span>
-                        </h6>
-                        <p class="w3-padding">
-                            <i>Due to liability issues, the Computer Center is not allowed to assist students or faculty
-                                with
-                                issues on personal devices. Two of my co-workers (who are also students at College of
-                                the
-                                Ozarks and emplyees at the Computer Center) and I decided to make our own helpdesk
-                                service
-                                unaffiliated with the college to capitalize on this market and extend our ability to
-                                help.
-                                I worked with a partner to design the database in MySQL Workbench and then deployed it
-                                on
-                                Google Cloud SQL. I personally wrote all of the 25 stored procedures for accessing data.
-                                We chose to employ the MVC design paradigm. I wrote part of the model and it's
-                                accompanying
-                                DAO. To boost security, we used the Google Sign-In API. Regular user functionality
-                                includes
-                                creating an account, creating a work order, viewing work orders a user has created,
-                                adding
-                                notes to work orders, and rating the experience. Technician functionality includes
-                                viewing
-                                all work orders, organizing work orders by operating system, joining a work order, and
-                                adding
-                                notes to work orders.
-                            </i>
-                        </p>
-                    </div>
-                    <div class="w3-container">
-                        <h5>
-                            <b>AwareNet / Full-stack Android application and web-crawler</b>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>October 13, 2017 - October 15, 2017</h6>
-                        <p class="w3-padding">
-                            <i>In the fall of 2017, my college's
-                                <a href="https://www.acm.org/" target="_blank">Association of Computing Machinery</a>
-                                chapter participated in Major League Hacking's
-                                <a href="http://tiger-hacks.com/" target="_blank">TigerHacks</a> hackathon. I worked
-                                with a team of five classmates and we had 36 hours to
-                                complete our project. Our idea was to use a webcrawler to check FEMA's website for
-                                inclement
-                                weather and allow users to watch certain counties. Users would receive push
-                                notifications
-                                to their phones when a county they are watching experiences severe weather. I focused on
-                                writing the web crawler useing the Scrapy Python library, and this was my first
-                                experience
-                                really using Python in a project. The web crawler checked periodically for new severe
-                                weather
-                                on FEMA's website and formatted the report in a JSON file. I also focused on configuring
-                                the server we used, which was hosted on Amazon Web Services, using PuTTY. Our project
-                                received
-                                the
-                                <a href="https://devpost.com/software/awarenet" target="_blank">Rookie of the Year</a>
-                                award, as none of our team members had ever previously participated
-                                in a hackathon. While the project was not completed to production level, the team has
-                                plans
-                                to continue development in the future.</i>
-                        </p>
-                    </div>
-                    <div class="w3-container">
-                        <h5>
-                            <a href="https://github.com/1silvertiger/BestBooks" target="_blank">
-                                <b>Best Books / Full-stack bookstore application</b>
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
-                            </a>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2017</h6>
-                        <p class="w3-padding">
-                            <i>For my Database Systems class at College of the Ozarks, taken in Spring of 2017, the
-                                final project
-                                consisted of an online bookstore. The professor allowed much freedom of design in
-                                pursuit
-                                of his requirements. My partner, Joshua Dowd, and I opted to employ a CLI for simplicity
-                                of design, testing, and deployment (using the Apache Commons CLI API for parsing the
-                                user
-                                input) and used MySQL as the backend. We used MVC design to streamline separation of
-                                functionality
-                                as well as enforce user permissions. Customers could create accounts, log in and out,
-                                search
-                                and view books, add books to their carts, and place orders. Admin capabilities, which I
-                                primarily
-                                focused on, included: CRUD functionality on a variety of information (user addresses,
-                                publisher
-                                contact information, prices, book information, and more); updating orders between
-                                processing,
-                                shipping, delivered, cancelled, and returned; managing user permissions; and generating
-                                reports
-                                in CSV format. The database included 11 tables in BCNF. My partner and I designed and
-                                deployed
-                                the database, populated it with data, wrote 107 stored procedures, wrote the objects for
-                                processing the data and accompanying DAO classes for storing it in the database, wrote
-                                admin
-                                and customer controllers for parsing user input and passing commands to the DAO, wrote a
-                                master controller to direct user input to the appropriate specialized controller, wrote
-                                a
-                                class for elegantly displaying information in the console, and wrote a class for
-                                translating
-                                information in the database into CSV format for report generation. Notable functionality
-                                includes: hashing of user passwords using the bcrypt algorithm; encrypting user credit
-                                cards
-                                with AES-256 (due to time constraints, with the professor’s permission, the key to each
-                                number
-                                was a hash of the CVV number, required for checkout); soft delete of user accounts
-                                allowing
-                                retrieval of information for data-mining or account reopening; and searching algorithms
-                                optimized
-                                to execute as few calls on the database as possible. The full source code of the project
-                                is available on my GitHub account.
-                            </i>
-                        </p>
-                    </div> -->
                 </section>
 
                 <!-- End Right Column -->
@@ -690,10 +543,3 @@
 <script src="js/script.js" defer></script>
 
 </html>
-
-<!--
-TODO
-Make name and picture sticky
-Add mix-ins where appropriate
-Confirm tabs are proper
- -->
