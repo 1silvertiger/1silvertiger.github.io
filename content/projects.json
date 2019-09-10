@@ -1,0 +1,22 @@
+{
+    "array": [
+        {
+            "title": "AwareNet",
+            "summary": "Full-stack Android application and web crawler",
+            "beginMonth": "October 13",
+            "beginYear": "2017",
+            "endMonth": "October 15",
+            "endYear": "2017",
+            "description": "In the fall of 2017, my college's Association of Computing Machinery chapter participated in Major League Hacking's TigerHacks hackathon. I worked with a team of five classmates and we had 36 hours to complete our project. Our idea was to use a webcrawler to check FEMA's website for inclement weather and allow users to watch certain counties. Users would receive push notifications to their phones when a county they are watching experiences severe weather. I focused on writing the web crawler useing the Scrapy Python library, and this was my first experience really using Python in a project. The web crawler checked periodically for new severe weather on FEMA's website and formatted the report in a JSON file. I also focused on configuring the server we used, which was hosted on Amazon Web Services, using PuTTY. Our project received the Rookie of the Year award, as none of our team members had ever previously participated in a hackathon. While the project was not completed to production level, the team has plans to continue development in the future."
+        },
+        {
+            "title": "Best Books",
+            "summary": "Full-stack bookstore application",
+            "beginMonth": "March",
+            "beginYear": "2017",
+            "endMonth": "May",
+            "endYear": "2017",
+            "description": "For my Database Systems class at College of the Ozarks, taken in Spring of 2017, the final project consisted of an online bookstore. The professor allowed much freedom of design in pursuit of his requirements. My partner, Joshua Dowd, and I opted to employ a CLI for simplicity of design, testing, and deployment (using the Apache Commons CLI API for parsing the user input) and used MySQL as the backend. We used MVC design to streamline separation of functionality as well as enforce user permissions. Customers could create accounts, log in and out, search and view books, add books to their carts, and place orders. Admin capabilities, which I primarily focused on, included: CRUD functionality on a variety of information (user addresses, publisher contact information, prices, book information, and more); updating orders between processing, shipping, delivered, cancelled, and returned; managing user permissions; and generating reports in CSV format. The database included 11 tables in BCNF. My partner and I designed and deployed the database, populated it with data, wrote 107 stored procedures, wrote the objects for processing the data and accompanying DAO classes for storing it in the database, wrote admin and customer controllers for parsing user input and passing commands to the DAO, wrote a master controller to direct user input to the appropriate specialized controller, wrote a class for elegantly displaying information in the console, and wrote a class for translating information in the database into CSV format for report generation. Notable functionality includes: hashing of user passwords using the bcrypt algorithm; encrypting user credit cards with AES-256 (due to time constraints, with the professor’s permission, the key to each number was a hash of the CVV number, required for checkout); soft delete of user accounts allowing retrieval of information for data-mining or account reopening; and searching algorithms optimized to execute as few calls on the database as possible. The full source code of the project is available on my GitHub account."
+        }
+    ]
+}
