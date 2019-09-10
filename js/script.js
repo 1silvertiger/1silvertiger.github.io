@@ -1,6 +1,6 @@
-const workExperienceUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/vue/content/workExperience.json';
-const educationUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/vue/content/education.json';
-const projectsUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/vue/content/projects.json';
+const workExperienceUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/master/content/workExperience.json';
+const educationUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/master/content/education.json';
+const projectsUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/master/content/projects.json';
 
 (async function () {
    const workExperience = await syncFetchJson(workExperienceUrl);
