@@ -1,22 +1,21 @@
 const workExperienceUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/vue/content/workExperience.json';
-const educationUrl = '';
-const projectsUrl = '';
+const educationUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/vue/content/education.json';
+const projectsUrl = 'https://raw.githubusercontent.com/1silvertiger/1silvertiger.github.io/vue/content/projects.json';
 
 (async function () {
    const workExperience = await syncFetchJson(workExperienceUrl);
+   const education = await syncFetchJson(educationUrl);
+   const projects = await syncFetchJson(projectsUrl);
 
    const app = new Vue({
       el: '#app',
       data: {
-         // education: education,
+         education: education.array,
          workExperience: workExperience.array,
-         // projects: projects
+         projects: projects.array
       }
    });
 })();
-// const workExperience = getWorkExperience();
-// const education = syncFetchJson(educationUrl);
-// const projects = syncFetchJson(projectsUrl);
 
 
 

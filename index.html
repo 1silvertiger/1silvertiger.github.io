@@ -468,6 +468,23 @@
                 <!-- Education panel -->
                 <section class="section w3-container w3-card-2 w3-margin-bottom">
                     <h2 class="w3-padding-16">
+                            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
+
+                    <div v-for="degree in education" class="w3-container">
+                        <h5>
+                            <b>{{ degree.institution }} / {{ degree.level }}</b>
+                        </h5>
+                        <h6 class="date">
+                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ degree.beginMonth }} {{ degree.beginYear }} -
+                            <span v-if="!degree.endMonth || !degree.endYear" class="current-box w3-round">Present</span>
+                            <span v-else>{{ degree.endMonth }} {{ degree.endYear }}</span>
+                        </h6>
+                        <p class="w3-padding">
+                            <i>{{ degree.description }}</i>
+                        </p>
+                    </div>
+
+                    <!-- <h2 class="w3-padding-16">
                         <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge "></i>Education</h2>
                     <div class="w3-container">
                         <h5>
@@ -487,7 +504,7 @@
                                 <a href="https://www.cofo.edu/Page/Work-Education.96.html" target="_blank">website.</a>
                             </i>
                         </p>
-                    </div>
+                    </div> -->
                 </section>
                 <!--<br>-->
 
@@ -507,80 +524,28 @@
                         </p>
                         <hr>
                     </div>
-
-                    <!-- <div class="w3-container">
-                        <h5>
-                            <b>Helpdesk Technician / College of the Ozarks Computer Center</b>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2017 -
-                            <span class="current-box w3-round">Present</span>
-                        </h6>
-                        <p class="section-text w3-padding">
-                            <i>I am currently employed at the College of the Ozarks Computer Center, the IT helpdesk for
-                                the
-                                college. Typical jobs include: troubleshooting PC’s, printers, and other associated
-                                devices;
-                                diagnosing issues over the phone; explaining technical concepts to faculty and staff;
-                                discussing
-                                issues via live chat and phone calls with manufacturers; and updating and
-                                troubleshooting
-                                a plethora of software from various vendors.</i>
-                        </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5>
-                            <b>Web Developer / College of the Ozarks Computer Center</b>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2017 - August 2017</h6>
-                        <p class="section-text w3-padding">
-                            <i>For six weeks during the summer of 2017, I worked as a developer on the College of the
-                                Ozarks
-                                Computer Center's internal helpdesk website. This job involved working with API’s from
-                                various
-                                vendors, designing new web pages in the Web Forms paradigm with ASP.NET, retrieving and
-                                formatting
-                                data with Microsoft SQL Server Management Studio, and using SourceTree for source
-                                control.</i>
-                        </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5>
-                            <b>Student Manager / Bobcat Food Services</b>
-                        </h5>
-                        <h6 class="date">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2016</h6>
-                        <p class="w3-padding">
-                            <i>For a single semester, I worked as a student manager at Bobcat Food Services, the
-                                department
-                                of the College of the Ozarks responsible for feeding the students, faculty, and staff.
-                                As
-                                a student manager, I was expected to manage between six and twenty student workers,
-                                occasionally
-                                assisted by another student manager. Two full-time managers and small full-time kitchen
-                                staff
-                                provided supervision. I acted as an intermediary between upper management and the
-                                student
-                                workers, assured timely and safe preparation of food, and directed the student workers
-                                in
-                                maintaining a clean and professional dining environment. Occasionally, I was expected to
-                                assist or direct catered meals, including an annual alumni dinner. Expectations included
-                                conflict management, employee relations, and professional interaction with students,
-                                faculty,
-                                staff, and members of the public.</i>
-                        </p>
-                        <br>
-                    </div> -->
                 </section>
 
                 <!-- Projects panel -->
                 <section class="section w3-container w3-card-2">
                     <h2 class="w3-padding-16">
                         <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge "></i>Projects</h2>
-                    <div class="w3-container">
+
+                    <div v-for="project in projects" class="w3-container">
+                        <h5>
+                            <b>{{ project.title }} / {{ project.summary }}</b>
+                        </h5>
+                        <h6 class="date">
+                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>{{ project.beginMonth }} {{ project.beginYear}} -
+                            <span v-if="!project.endMonth || !project.endYear" class="current-box w3-round">Ongoing</span>
+                            <span v-else>{{ project.endMonth }} {{ project.endYear }}</span>
+                        </h6>
+                        <p class="w3-padding">
+                            <i>{{ project.description }}</i>
+                        </p>
+                    </div>
+
+                    <!-- <div class="w3-container">
                         <h5>
                             <b>Student Helpdesk / Full-stack IT helpdesk web application</b>
                         </h5>
@@ -698,7 +663,7 @@
                                 is available on my GitHub account.
                             </i>
                         </p>
-                    </div>
+                    </div> -->
                 </section>
 
                 <!-- End Right Column -->
