@@ -9,6 +9,16 @@
             "endYear": "2005",
             "present": false,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque dictum varius. Quisque ultricies magna sed erat gravida placerat. Vestibulum maximus nulla aliquet augue lacinia, vel scelerisque dolor congue. Pellentesque gravida ac metus in lacinia. Nam nec diam risus. Pellentesque pretium dolor sapien, vitae dapibus velit tempus nec. Phasellus aliquam erat purus, consectetur elementum elit pharetra a.\n Sed elit ligula, pharetra at suscipit sit amet, condimentum vel est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vitae sodales ante, interdum scelerisque erat. Curabitur iaculis, nunc eu volutpat gravida, quam leo suscipit arcu, ac tincidunt nibh sem ut sem. Sed vestibulum fringilla velit, eget laoreet leo euismod nec. Etiam non lobortis erat, id dictum magna. Morbi dictum erat at consectetur imperdiet. Curabitur finibus, erat in interdum luctus, nulla felis aliquet sapien, sit amet volutpat lectus nulla sit amet mi. Sed at iaculis ipsum, vitae vestibulum sapien. Ut quis turpis sit amet lacus suscipit molestie. Fusce molestie ante metus, vitae vehicula arcu feugiat non. Phasellus cursus ante id faucibus pretium. Vestibulum id tincidunt enim, id aliquet ligula. Curabitur dignissim lacus sit amet ligula semper dignissim. Integer risus augue, elementum sed molestie vitae, aliquet ac erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+        },
+        {
+            "title": "Helpdesk Technician",
+            "employer": "College of the Ozarks IT Department",
+            "beginMonth": "January",
+            "beginYear": "2017",
+            "endMonth": "December",
+            "endYear": "2017",
+            "present": false,
+            "description": "I am currently employed at the College of the Ozarks Computer Center, the IT helpdesk for the college. Typical jobs include: troubleshooting PC’s, printers, and other associated devices; diagnosing issues over the phone; explaining technical concepts to faculty and staff; discussing issues via live chat and phone calls with manufacturers; and updating and troubleshooting a plethora of software from various vendors."
         }
     ]
 }
