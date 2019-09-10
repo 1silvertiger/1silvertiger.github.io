@@ -36,19 +36,6 @@ $("h5").hover(function () {
    $(this).find(".fa").removeClass("shadow-pulse");
 });
 
-async function getWorkExperience() {
-   const response = await fetch(workExperienceUrl);
-   return await response.json();
-}
-
-async function getEducation() {
-
-}
-
-async function getProjects() {
-
-}
-
 async function syncFetchJson(url) {
    const response = await fetch(url);
    const json = await response.json();
